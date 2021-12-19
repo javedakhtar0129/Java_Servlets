@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 
 public class abSquareServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        PrintWriter out = res.getWriter();
+        PrintWriter out = res.getWriter();  //to print on browser
         int square = (int)req.getAttribute("k"); //This is passing an object of an object
         out.println("Hello to Square Servlet\n"+"Square: "+square);
     }
